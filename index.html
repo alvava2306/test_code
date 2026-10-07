@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VentaPro | Impulsa tus ventas</title>
+  <meta name="description" content="Landing page base para una solución de ventas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== Encabezado ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">Venta<span>Pro</span></a>
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="nav__link">Inicio</a>
+        <a href="#beneficios" class="nav__link">Beneficios</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+        <a href="#contacto" class="btn btn--small">Solicitar demo</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Sección 1: Hero ===== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="badge">Nuevo · Plataforma de ventas 2026</span>
+          <h1>Cierra más ventas en <span class="highlight">menos tiempo</span></h1>
+          <p class="hero__text">
+            Centraliza tus prospectos, automatiza el seguimiento y descubre qué
+            oportunidades están listas para cerrar. Todo en un solo lugar.
+          </p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn">Empieza gratis</a>
+            <a href="#beneficios" class="btn btn--ghost">Ver cómo funciona</a>
+          </div>
+          <ul class="stats">
+            <li><strong data-count="38">0</strong><span>% más conversiones</span></li>
+            <li><strong data-count="12">0</strong><span>h ahorradas por semana</span></li>
+            <li><strong data-count="2500">0</strong><span>equipos activos</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="card-mock">
+            <div class="card-mock__header">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <p class="card-mock__label">Ventas del mes</p>
+            <p class="card-mock__value">$184,320</p>
+            <div class="bars">
+              <span style="--h:40%"></span><span style="--h:55%"></span>
+              <span style="--h:48%"></span><span style="--h:70%"></span>
+              <span style="--h:62%"></span><span style="--h:85%"></span>
+              <span style="--h:95%"></span>
+            </div>
+            <p class="card-mock__trend">▲ 24% vs. mes anterior</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Sección 2: Beneficios ===== -->
+    <section class="features" id="beneficios">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2>Todo lo que tu equipo necesita para vender más</h2>
+          <p>Herramientas pensadas para que tus vendedores dediquen su tiempo a lo que importa: cerrar.</p>
+        </header>
+
+        <div class="features__grid">
+          <article class="feature reveal">
+            <div class="feature__icon">🎯</div>
+            <h3>Prospectos priorizados</h3>
+            <p>Puntuación automática de leads para que sepas a quién llamar primero.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon">⚡</div>
+            <h3>Seguimiento automático</h3>
+            <p>Correos y recordatorios programados que nunca dejan enfriar una oportunidad.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon">📊</div>
+            <h3>Reportes en tiempo real</h3>
+            <p>Visualiza tu embudo, metas y desempeño del equipo con un solo clic.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon">🔗</div>
+            <h3>Integraciones</h3>
+            <p>Conecta tu correo, calendario, WhatsApp y CRM sin escribir código.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Sección 3: Contacto / CTA ===== -->
+    <section class="contact" id="contacto">
+      <div class="container contact__inner">
+        <div class="contact__content reveal">
+          <h2>¿Listo para hacer crecer tus ventas?</h2>
+          <p>Déjanos tus datos y un especialista te mostrará la plataforma en una demo de 20 minutos, sin compromiso.</p>
+          <ul class="checklist">
+            <li>Prueba gratuita de 14 días</li>
+            <li>Sin tarjeta de crédito</li>
+            <li>Soporte en español</li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form__group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@empresa.com" required />
+          </div>
+          <div class="form__group">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" />
+          </div>
+          <div class="form__group">
+            <label for="equipo">Tamaño del equipo de ventas</label>
+            <select id="equipo" name="equipo">
+              <option value="1-5">1 a 5 personas</option>
+              <option value="6-20">6 a 20 personas</option>
+              <option value="21+">Más de 20 personas</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--block">Solicitar demo</button>
+          <p class="form__message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> VentaPro. Todos los derechos reservados.</p>
+      <nav>
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
